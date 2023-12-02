@@ -33,6 +33,7 @@ impl Color for &'static str {}
 impl Color for String {}
 impl Color for Rgb {}
 impl Color for Rgba {}
+impl Color for f64 {}
 
 /// ColorArray is only used internally to provide a helper method for converting
 /// Vec<impl Color> to Vec<Box<dyn Color>>, as we would otherwise fall foul of

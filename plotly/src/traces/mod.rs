@@ -11,7 +11,7 @@ pub mod mesh3d;
 mod ohlc;
 pub mod sankey;
 mod scatter;
-mod scatter3d;
+pub mod scatter3d;
 pub mod scatter_mapbox;
 mod scatter_polar;
 pub mod surface;
