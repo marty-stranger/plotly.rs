@@ -164,7 +164,7 @@ where
     show_scale: Option<bool>,
     #[serde(rename = "surfacecolor")]
     surface_color: Option<Vec<Box<dyn Color>>>,
-    text: Option<Dim<String>>,
+    text: Option<Vec<Vec<String>>>,
     visible: Option<Visible>,
     #[serde(rename = "xcalendar")]
     x_calendar: Option<Calendar>,
@@ -337,8 +337,7 @@ mod tests {
             .surface_color(vec!["#123456"])
             .show_legend(true)
             .show_scale(false)
-            .text("text")
-            .text_array(vec!["text1", "text2"])
+            .text(vec![vec!["text1".into(), "text2".into()]])
             .visible(Visible::False)
             .x_calendar(Calendar::Chinese)
             .y_calendar(Calendar::Coptic)
@@ -373,7 +372,7 @@ mod tests {
             "surfacecolor": ["#123456"],
             "showlegend": true,
             "showscale": false,
-            "text": ["text1", "text2"],
+            "text": [["text1", "text2"]],
             "visible": false,
             "xcalendar": "chinese",
             "ycalendar": "coptic",

@@ -170,7 +170,7 @@ fn main() {
     // customized_scatter3d_plot();
 
     // Surface Plots
-    // surface_plot();
+    surface_plot();
 
     // Mesh Plots
     // mesh_3d_plot();
